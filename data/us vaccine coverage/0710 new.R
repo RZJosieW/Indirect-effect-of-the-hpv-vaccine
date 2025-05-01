@@ -3,7 +3,7 @@ library(haven)
 library(dplyr)
 library(survey)
 
-path <- "/Users/V/Desktop/uscoverage/"
+path <- "/Users//Desktop/uscoverage/"
 
 data_0910 <- inner_join(
   read_xpt(paste0(path, "0910.XPT")) %>% mutate(cycle = "2009-2010"),
