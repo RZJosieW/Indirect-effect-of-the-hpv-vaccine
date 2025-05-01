@@ -4,7 +4,7 @@ library(dplyr)
 library(survey)
 
 
-path <- "/Users/V/Desktop/uscoverage/"
+path <- "/Users//Desktop/uscoverage/"
 
 # 
 data_0910 <- inner_join(
