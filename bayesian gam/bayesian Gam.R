@@ -7,7 +7,7 @@ library("schoenberg")
 library("rstan")
 devtools::install_github('gavinsimpson/schoenberg')
 library(readxl)
-hpvdata <- read_excel("/Users/V/Desktop/hpvfinal.xlsx")
+hpvdata <- read_excel("/Users//Desktop/hpvfinal.xlsx")
 head(hpvdata)
 colnames(hpvdata)[colnames(hpvdata) == "Pre HPV-16, -18"] <- "pre"
 colnames(hpvdata)[colnames(hpvdata) == "Post HPV-16, -18"] <- "post"
