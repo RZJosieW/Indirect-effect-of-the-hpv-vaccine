@@ -27,9 +27,7 @@ result <- optim(
   method = "BFGS"
 )
 
-cat("A =", result$par[1], "\n")
-cat("B =", result$par[2], "\n")
-cat("C =", result$par[3], "\n")
+
 curve_x <- seq(14, 40, length.out = 200)
 fitted_p <- f_model(curve_x, result$par[1], result$par[2], result$par[3])
 
