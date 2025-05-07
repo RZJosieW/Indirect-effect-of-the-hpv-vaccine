@@ -43,8 +43,7 @@ summary(fit_brm)$fixed
 newdata <- data.frame(x = 16, n = 1)
 pred <- posterior_epred(fit_brm, newdata = newdata)
 ci <- quantile(pred, probs = c(0.025, 0.975))
-cat(" f(14):", mean(pred), "\n")
-cat("95% CI (MCMC): [", ci[1], ", ", ci[2], "]\n")
+
 plot(fit_brm)
 mcmc_plot(fit_brm, type = "dens_overlay")
 bayesplot::mcmc_acf()
